@@ -1,0 +1,332 @@
+div {
+    font-size: 11.5px;
+}
+
+body {
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+}
+
+
+/*the styling for the checkerboard mostly to make it a grid*/
+
+.board {
+    border-radius: 20px;
+    position: fixed;
+    left: 10%;
+    bottom: 10%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: minmax(50px, auto) repeat(9, 50px);
+}
+
+
+/*this is for the green squares in the checkerboard*/
+
+.green {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+}
+
+
+/*this is for the white sqaures in the checkerboard*/
+
+.white {
+    background-color: #f7ea97;
+    width: 50px;
+    height: 50px;
+}
+
+
+/*the styling for the position and size of the first snake */
+
+#snake1 {
+    position: absolute;
+    top: 75%;
+    left: 12%;
+    height: 95px;
+    width: 250px;
+}
+
+
+/*the styling for the position and size of the second snake */
+
+#snake2 {
+    transform: rotate(16deg);
+    position: absolute;
+    top: 43%;
+    right: 59%;
+    height: 190px;
+    width: 130px;
+}
+
+
+/*the styling for the position and size of the third snake */
+
+#snake3 {
+    transform: rotate(-50deg)rotateY(180deg);
+    position: absolute;
+    height: 75px;
+    width: 325px;
+    top: 35%;
+    right: 60%;
+}
+
+
+/*the styling for the position and size of the first ladder */
+
+#ladder1 {
+    position: absolute;
+    height: 60px;
+    width: 85px;
+    top: 78%;
+    right: 55.5%;
+}
+
+
+/*the styling for the position and size of the second ladder */
+
+#ladder2 {
+    position: absolute;
+    height: 200px;
+    top: 17%;
+    right: 80%;
+    transform: rotate(-5deg)rotateY(180deg);
+}
+
+
+/*this is the styling to make the background and the grid for the dice*/
+
+.div10 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-height: 300px;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(3, 100px);
+    display: grid;
+    justify-content: bottom;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    border-color: white;
+    border-style: solid;
+}
+
+
+/*divs from 1 to 9 are the dots on the dice*/
+
+.div1 {
+    margin: 22.5px;
+    opacity: 0;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 35px;
+}
+
+.div2 {
+    margin: 25px;
+    opacity: 0;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 35px;
+}
+
+.div3 {
+    margin: 25px;
+    opacity: 0;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 35px;
+}
+
+.div4 {
+    margin: 23.5px;
+    opacity: 0;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 35px;
+}
+
+.div5 {
+    margin: 25px;
+    opacity: 0;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 35px;
+}
+
+.div6 {
+    margin: 25px;
+    opacity: 0;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 35px;
+}
+
+.div7 {
+    margin: 22.5px;
+    opacity: 0;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 35px;
+}
+
+.div8 {
+    margin: 25px;
+    opacity: 0;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 35px;
+}
+
+.div9 {
+    margin: 25px;
+    opacity: 0;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 35px;
+}
+
+
+/*this styles the player two button*/
+
+#button {
+    outline: none;
+    position: fixed;
+    bottom: 0;
+    right: 315px;
+    background-color: yellow;
+    width: 125px;
+    height: 100px;
+    border-radius: 25px;
+    color: black;
+    font-size: 2rem;
+}
+
+#button:hover {
+    background-color: #fff347;
+}
+
+
+/*this styles the player one button*/
+
+#button2 {
+    outline: none;
+    position: fixed;
+    bottom: 0;
+    right: 450px;
+    background-color: red;
+    width: 125px;
+    height: 100px;
+    border-radius: 25px;
+    color: black;
+    font-size: 2rem;
+}
+
+#button2:hover {
+    background-color: #d12e26;
+}
+
+
+/*this is the styling for the counters that are in each square*/
+
+.countersr {
+    border-radius: 50%;
+    width: 11.5px;
+    height: 11.5px;
+    opacity: 0%;
+    background-color: red;
+}
+
+.countersy {
+    background-color: yellow;
+    border-radius: 50%;
+    width: 11.5px;
+    height: 11.5px;
+    opacity: 0%;
+}
+
+
+/*this is the style for the message that apperars in the top right*/
+
+#message {
+    position: fixed;
+    top: 20%;
+    right: 10%;
+}
+
+#background-win {
+    position: fixed;
+    left: 20%;
+    width: 60%;
+    top: 10%;
+    height: 80vh;
+    opacity: 0%;
+    border-radius: 50px;
+    background: linear-gradient(24deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%), linear-gradient(233deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(143deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%);
+}
+
+#win {
+    position: fixed;
+    left: 23%;
+    top: 16vh;
+    width: 54%;
+    height: 67.5vh;
+    background-color: white;
+    opacity: 0%;
+    border-radius: 35px;
+    border-color: grey;
+    text-align: center;
+    font-size: 50px;
+    background: linear-gradient(24deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%), linear-gradient(233deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(143deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%);
+}
+
+#win-button {
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    top: 12.5%;
+    left: 74.5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: red;
+    font-size: 37.5px;
+    border-color: grey;
+    border-style: solid;
+    opacity: 0%;
+    background: linear-gradient(24deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%), linear-gradient(233deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(143deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%);
+}
